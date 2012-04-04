@@ -16,11 +16,9 @@
 	}
 
 	Plugin.prototype.init = function () {
-
-		$backToTopEle = $('<div class="backToTop"></div>')
-            .appendTo($("body"))
-            .text($backToTopTxt)
-            .attr("title", defaults.backToTopTxt)
+		$backToTopEle = $(this.element);
+        $backToTopEle.text(this.options.backToTopTxt)
+            .attr("title", this.options.backToTopTxt)
             .click(function () {
                 $("html, body").animate({ scrollTop: 0 }, 120);
             }), 

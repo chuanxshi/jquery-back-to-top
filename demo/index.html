@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Back to top demo</title>
+  <meta name="description" content="Sound of HTML5, CSS3 and JavaScript Audio API">
+  <meta name="author" content="Shi Chuan">
+  <style>
+  #back-to-top {
+
+    display: none;
+    width: 100px;
+    line-height: 1.2;
+    padding: 5px 0;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    _position: absolute;
+    right: 10px;
+    bottom: 100px;
+    _bottom: "auto";
+    cursor: pointer;
+    opacity: .6;
+    filter: Alpha(opacity=60);
+  }
+  </style>
+</head>
+<body>
+  <header><h1>Back to top demo</h1></header>
+    <div id="random-txt">
+    </div>
+  <section>
+
+  </section> <!-- end of content -->
+  
+  <footer>
+  by <a href="http://twitter.com/#!/shichuan">@shichuan</a>
+  </footer>
+  <div id="back-to-top"></div>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="../jquery.backtotop.js"></script>
+  <script>
+  for (var i = 0; i < 100; i+=1 ) {
+    $('#random-txt').append('<p>Test</p>');
+  }
+  $('#back-to-top').backtotop();
+  </script>
+  </body>
+</html>
